@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: none;
+
+}
+#game {
+    overflow: hidden;
+background-image: url('../assets/night.png');
+    position: relative;
+width: 100vw;
+height: 100vh;
+
+
+    z-index: 999;
+}
+#sprite {
+    position: absolute;
+ width: 150px;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    filter: saturate(2); 
+
+}
+#beer {
+    width: 85px;
+    position: absolute;
+}
+#score {
+font-size: 45px;
+color:white;
+font-weight:bold;
+border-bottom: 2px solid white;
+position: absolute;
+right: 15px;
+top: 15px;
+background: #2E2E2E;
+padding: 15px;
+border-radius: 15px;
+}
+#popup {
+width: 85vw;
+height: 85vh;  
+background:white;
+position:absolute;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+padding: 25px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display:none;
+z-index:2000;
+}
+#hearts {
+position: absolute;
+z-index:1000;
+top: 15px;
+left: 15px;
+}
+.heart {
+width: 75px;
+}
